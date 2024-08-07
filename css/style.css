@@ -47,11 +47,26 @@ body{
     margin-bottom: 20px;
 }
 
-.button a{
+a {
+    display: inline-block;
     text-decoration: none;
     font-size: 1rem;
-    color: #111;
-    background-color: #39c6d6;
+    color: #fff;
+    background-color: #007bff; /* Warna latar belakang tombol */
+    padding: 10px 20px; /* Jarak antara teks dan border tombol */
+    border-radius: 5px; /* Sudut membulat pada tombol */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan tombol */
+    transition: background-color 0.3s, transform 0.3s; /* Efek transisi untuk hover */
+}
+
+.button a:hover {
+    background-color: #0056b3; /* Warna latar belakang tombol saat hover */
+    transform: translateY(-2px); /* Efek angkat tombol saat hover */
+}
+
+.button a:active {
+    background-color: #00408d; /* Warna latar belakang tombol saat diklik */
+    transform: translateY(0); /* Kembalikan tombol ke posisi semula saat diklik */
 }
 
 @media screen and (max-width:574px){
