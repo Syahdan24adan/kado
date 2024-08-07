@@ -51,6 +51,7 @@ body{
     text-decoration: none;
     font-size: 1rem;
     color: #111;
+    background-color: #39c6d6;
 }
 
 @media screen and (max-width:574px){
